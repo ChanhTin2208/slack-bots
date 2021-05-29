@@ -15,7 +15,7 @@ const client = new WebClient(process.env.SLACK_BOT_TOKEN, {
     logLevel: LogLevel.DEBUG
   });
 
-app.message("TestFirebaseCrashlyticsApp", async ({message, say}) => {
+app.message("ISANA", async ({message, say}) => {
   pendingMessages.push(message);
     if (pendingMessages.length > 0) {
         var currentTime = new Date().valueOf()
